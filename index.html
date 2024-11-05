@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="faq">
+        <div class="container">
+          <div class="title">
+            <p>FAQ</p>
+          </div>
+          <ul class="faq-list">
+            <!-- Each FAQ item will be generated with JavaScript to make the component more flexible -->
+          </ul>
+        </div>
+      </section>
+      <section id="arrow">
+        <div class="container">
+          <div class="title">
+            <p>ARROWS</p>
+          </div>
+          <div class="arrow-container">
+            <div class="flat-arrow">Flat Arrow Text</div>
+            <div class="arrow">Arrow Text</div>
+          </div>
+        </div>
+      </section>
+      <section id="accordion">
+        <div class="container">
+          <div class="title">
+            <p>ACCORDION</p>
+          </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                Section 1
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  This is the content of section 1. It expands when the header
+                  is clicked.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                Section 2
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  This is the content of section 2. It expands when the header
+                  is clicked.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" onclick="toggleAccordion(this)">
+                Section 3
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  This is the content of section 3. It expands when the header
+                  is clicked.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tab">
+        <div class="title">
+          <p>TABS</p>
+        </div>
+        <div class="container">
+          <div class="tabs">
+            <button onclick="showTab(event, 'tab1')" class="tab-btn active">
+              Tab 1
+            </button>
+            <button onclick="showTab(event, 'tab2')" class="tab-btn">
+              Tab 2
+            </button>
+            <button onclick="showTab(event, 'tab3')" class="tab-btn">
+              Tab 3
+            </button>
+          </div>
+
+          <div id="tab1" class="tab-content active">Content for Tab 1</div>
+          <div id="tab2" class="tab-content">Content for Tab 2</div>
+          <div id="tab3" class="tab-content">Content for Tab 3</div>
+        </div>
+      </section>
+      <section id="dropdown">
+        <div class="title">
+          <p>DROPDOWN</p>
+        </div>
+        <div class="container">
+          <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown()">
+              Dropdown
+            </button>
+            <div id="dropdownMenu" class="dropdown-menu">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a href="#">Option 3</a>
+            </div>
+          </div>
+          <nav>
+            <label for="touch"><span>DROPDOWN</span></label>               
+            <input type="checkbox" id="touch"> 
+          
+            <ul class="slide">
+              <li><a href="#">Lorem Ipsum</a></li> 
+              <li><a href="#">Lorem Ipsum</a></li>
+              <li><a href="#">Lorem Ipsum</a></li>
+              <li><a href="#">Lorem Ipsum</a></li>
+            </ul>
+          </nav> 
+        </div>
+      </section>
+      <section id="slider">
+        <div class="title">
+          <p>SLIDER</p>
+        </div>
+       <div class="container">
+        <div class="slider-container">
+          <div class="slider">
+            <img src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_640.jpg" alt="Image 1" class="slide active" />
+            <img src="https://www.shutterstock.com/image-photo/group-pets-posing-together-dog-260nw-2518087139.jpg" alt="Image 2" class="slide" />
+            <img src="https://img.freepik.com/free-photo/cute-animals-group-white-background_23-2150038562.jpg" alt="Image 3" class="slide" />
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirDrWrtBwf7VCG25Fk9VSY0Jt27T2rt-Q-99d-i40bXGw0H-yG5bzohZPyvgFgWx3yEtjHMQgz0tlRNGUbIegkcI17DH0J8U4gTOXsb3NBwRWRvJDcIUYM5G0kVrRoDJZ10YR4i-Jwsoo/s1600/Golden-Retriever-puppy-4-picture.jpg" alt="Image 4" class="slide" />
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+       </div>
+      </section>
+    </main>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
