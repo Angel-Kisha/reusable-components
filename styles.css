@@ -325,20 +325,19 @@ q::after {
   background-color: #ddd;
 }
 
-
 #dropdown nav {
-  width : 300px; 
+  width: 300px;
   background: #d9d9d9;
-  margin : 40px auto; 
+  margin: 40px auto;
 }
 
 #dropdown span {
-  padding : 30px;
-  background : #2d2f31; 
-  color : white;
-  font-size : 1.2em;
-  font-variant : small-caps;
-  cursor : pointer;
+  padding: 30px;
+  background: #2d2f31;
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
   display: block;
 }
 
@@ -349,19 +348,27 @@ q::after {
 }
 
 #dropdown .slide {
-  clear:both;
-  width:100%;
-  height:0px;
+  clear: both;
+  width: 100%;
+  height: 0px;
   overflow: hidden;
   text-align: center;
-  transition: height .4s ease;
+  transition: height 0.4s ease;
 }
 
-#dropdown .slide li {padding : 30px;}
+#dropdown .slide li {
+  padding: 30px;
+}
 
-#dropdown #touch {position: absolute; opacity: 0; height: 0px;}    
+#dropdown #touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
 
-#dropdown #touch:checked + .slide {height: auto;} 
+#dropdown #touch:checked + .slide {
+  height: auto;
+}
 
 /* SLIDER CSS*/
 #slider .slider-container {
@@ -403,5 +410,3 @@ q::after {
 #slider .next {
   right: 10px;
 }
-
-
