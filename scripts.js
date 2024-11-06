@@ -85,7 +85,6 @@ function showTab(event, tabId) {
 //   DROPDOWN
 function toggleDropdown() {
     const dropdownMenu = document.getElementById('dropdownMenu');
-    // Toggle the display between 'block' and 'none'
     if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
       dropdownMenu.style.display = 'block';
     } else {
@@ -93,14 +92,12 @@ function toggleDropdown() {
     }
   }
   
-  // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropdown-btn')) {
       const dropdownMenu = document.getElementById('dropdownMenu');
       dropdownMenu.style.display = 'none';
     }
   };
-  
   
 
   
@@ -127,6 +124,32 @@ function prevSlide() {
   showSlide(currentSlideIndex);
 }
 
-// Auto slide every 3 seconds
 setInterval(nextSlide, 3000);
 
+// CAROUSEL
+var carouselSlider = new Swiper('#carousel .carousel-slider', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay:{
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+});

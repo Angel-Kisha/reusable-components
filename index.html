@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Components</title>
     <link rel="stylesheet" href="./styles.css" />
+    <!-- for carousel -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- end for carousel  -->
   </head>
   <body>
     <main>
@@ -159,7 +165,97 @@
           </div>
         </div>
       </section>
+      <section id="carousel">
+        <div class="title">
+          <p>CAROUSEL / SWIPER</p>
+        </div>
+        <section id="carousel">
+          <div class="container">
+            <div class="swiper carousel-slider">
+              <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="swiper-slide carousel-slide">
+                  <div class="carousel-slide-img">
+                    <img
+                      src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_640.jpg"
+                      alt="carousel"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slide">
+                  <div class="carousel-slide-img">
+                    <img
+                      src="https://www.shutterstock.com/image-photo/group-pets-posing-together-dog-260nw-2518087139.jpg"
+                      alt="carousel"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slide">
+                  <div class="carousel-slide-img">
+                    <img
+                      src="https://img.freepik.com/free-photo/cute-animals-group-white-background_23-2150038562.jpg"
+                      alt="carousel"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slide">
+                  <div class="carousel-slide-img">
+                    <img
+                      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirDrWrtBwf7VCG25Fk9VSY0Jt27T2rt-Q-99d-i40bXGw0H-yG5bzohZPyvgFgWx3yEtjHMQgz0tlRNGUbIegkcI17DH0J8U4gTOXsb3NBwRWRvJDcIUYM5G0kVrRoDJZ10YR4i-Jwsoo/s1600/Golden-Retriever-puppy-4-picture.jpg"
+                      alt="carousel"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slide">
+                  <div class="carousel-slide-img">
+                    <img
+                      src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:eco%2Cw_1200/MTk3MjI5OTczMDA0NjI0OTc5/cute-pet-names.png"
+                      alt="carousel"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slide">
+                  <div class="carousel-slide-img">
+                    <img
+                      src="https://hips.hearstapps.com/hmg-prod/images/why-cats-are-best-pets-worshipped-animals-1559234295.jpg"
+                      alt="carousel"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide carousel-slide">
+                  <div class="carousel-slide-img">
+                    <img
+                      src="https://firstmate.com/wp-content/uploads/2018/04/20368899_1213529258776391_2863842027318211324_o-1024x1024.jpg"
+                      alt="carousel"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slider-control">
+                <div class="swiper-button-prev slider-arrow">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-button-next slider-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
-    <script src="./scripts.js"></script>
+    <!-- start script for carousel -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- end script for carousel -->
+    <script src="scripts.js"></script>
   </body>
 </html>
