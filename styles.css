@@ -499,13 +499,17 @@ q::after {
     left: 42%;
     transform: translateX(-42%);
     filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    outline: none;
   }
 
   .carousel-slider-control .slider-arrow ion-icon {
     font-size: 2rem;
     color: #222224;
   }
-
+  .carousel-slider-control .slider-arrow ion-icon:hover {
+    font-size: 2rem;
+    color: gray;
+  }
   .carousel-slider-control .slider-arrow::after {
     content: "";
   }
